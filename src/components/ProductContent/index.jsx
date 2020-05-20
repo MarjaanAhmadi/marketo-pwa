@@ -8,7 +8,6 @@ import CarouselProductDetail from '../../mainComponents/Carousel/CarouselProduct
 import AddOrRemoveFromShCard from '../../mainComponents/AddOrRemove/AddOrRemoveFromShCard';
 import axiosTest from '../../config/axiosTest';
 
-
 const styles = theme => ({
   wrapper: {
     padding: '5px 0',
@@ -410,7 +409,7 @@ const ProductContent = (props) => {
            <AddOrRemoveFromShCard removeItem={() => {removeItem()}} addItem={() => {addToShoppingCardFunc()}} count={count}/>
           </div>
         </div>   
-        <MostSellers/>     
+        <MostSellers/>   
         {/* {
         isLoading?
         <div className={classes.wrapper}>

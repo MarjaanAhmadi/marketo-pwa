@@ -7,6 +7,7 @@ import MyOrders from '../../components/Home/MyOrders/MyOrders';
 import Banner from '../../components/Home/Banner/Banner';
 import MostSellers from '../../components/Home/MostSellers/MostSellers';
 import Categories from '../../components/Home/Categories/Categories';
+import OffSection from '../../components/Home/OffSection/offSection';
 const useStyles = makeStyles({
   root: {
   }
@@ -24,6 +25,8 @@ const HomeContainer = () => {
       <Banner/>
       <MostSellers/>
       <Categories/>
+      <OffSection />  
+
       {/* <MostSellers/> */}
       </div>
       </BaseLayout>

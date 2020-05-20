@@ -30,7 +30,7 @@ const CarouselItems = (props) => {
                 slidesPerPage={2.5}
                 slidesPerScroll={1}
                 offset={5}
-                itemWidth={160}
+                itemWidth={185}
                 rtl 
                 keepDirectionWhenDragging
                 value={value}

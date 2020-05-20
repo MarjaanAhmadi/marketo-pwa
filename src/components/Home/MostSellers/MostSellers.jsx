@@ -10,7 +10,8 @@ import { useSelector, useDispatch } from 'react-redux';
 const useStyles = makeStyles({
     root: {
         marginTop: 15,
-        alignItems: 'center'
+        alignItems: 'center',
+        padding: '0 15px 0 0'
     },
     mostSellerTitles : {
         justifyContent: 'space-between',
@@ -18,7 +19,11 @@ const useStyles = makeStyles({
         display: 'flex'
     },
     title: {
-        fontSize: 14
+        marginBottom: 8,
+        color: '#858585',
+        fontSize: 14,
+        fontSize: '1rem',
+        lineHeight: '1.571'       
     },
     more: {
         color: '#9A9A9A',

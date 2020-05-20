@@ -80,7 +80,6 @@ const styles = theme => ({
   },
   content: {
     marginTop: 45,
-    padding:"0px 6px" ,
     backgroundColor: '#F5F5F5',
     marginBottom: 55
   },

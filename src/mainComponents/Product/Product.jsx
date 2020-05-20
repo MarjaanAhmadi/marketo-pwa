@@ -26,69 +26,51 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 5,
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    height: 283
   },
   media: {
-    height: 0,
-    paddingTop: '56.25%',
-    margin: '10px 0 -20px 0px',
-    width: 100
-  },
-  addOrRemove: {
-    padding: "5px 25px"
-  },
-  contentSecion: {
-    height: 30
-  },
-  priceSection: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginTop: 30
-  },
-  price: {
-    fontSize: 11,
-    color: "#36CE91",
-    fontWeight: "bold",
-    alignSelf: "center"
-  },
-  priceOff: {
-    fontSize: 10,
-    color: "red",
-    fontWeight: "bold",
-    textDecoration: "line-through"
+    width: 153,
+    height: 124,
+    marginTop: 15,
+    alignSelf: 'center'
   },
   title: {
-    fontSize: 12,
-    fontWeight: 600,
-    // marginTop: 5
+    height: 42,
+    fontSize: '1rem',
+    lineHeight: '1.6',
+    textAlign: 'right',
+    color: '#2a2a2a',
+    overflow: 'hidden',
+    marginBottom: 5,
+    display: 'block'
   },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
+  priceCurrency: {
+    color: '#000',
+    fontSize: '.714rem',
+    lineHeight: '2.2',
+    fontWeight: 400,
+    padding: 2
   },
-  expandOpen: {
-    transform: 'rotate(180deg)',
+  startPrice: {
+    color: '#000',
+    fontSize: '1.08rem',
+    lineHeight: 1.375,
+    fontWeight: 700,
+    letterSpacing: 'normal',
+    width: '100%',
+    textAlign: 'left',
+    marginTop: 15
   },
-  cardContent: {
-    padding: "0 3px"
-  },
-  avatar: {
-    backgroundColor: red[500],
-  },
+  moreItems: {
+    textAlign: 'left',
+    fontSize: '0.7rem',
+    color: '#36CE91'
+  }
+  
 }));
 
 const Product = (props) => {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
-  const history = useHistory();
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
 
   return (
       <Card className={classes.root}>
@@ -99,34 +81,26 @@ const Product = (props) => {
         title="Paella dish"
       />
       <CardContent className={classes.cardContent}>
-        <div className={classes.contentSecion}>
-          <div className={classes.priceSection}>
-            {/* <span className={classes.price}>{props.product.amount}تومان</span>
-            {
-              props.product.off ? 
-                <span className={classes.priceOff}>{props.product.offPrice}تومان</span>
-              : ''
-            } */}
-          </div>
-          <div className={classes.title}>
-            <span>{props.product.title}</span>
-          </div>
+        <div className={classes.title}>
+          {props.product.title}
         </div>
-        <Divider variant="light"/>
-            
-              <div 
-              onClick={() => {
-              
-                history.push({
-                  pathname: '/productItems',
-                  state: {
-                    id: props.product.id
-                  }
-                })
-                }}>
-              <AddToShoppingCard/>
+        <Divider light />
+        <div className={classes.startPrice}>
+            <span className={classes.priceCurrency}>قیمت از</span> 12000<span className={classes.priceCurrency}>تومان</span>
+        </div>
 
-                </div>
+        <div className={classes.moreItems}>
+          مشاهده محصولات
+        </div>
+      {/* onClick={() => {
+              
+              history.push({
+                pathname: '/productItems',
+                state: {
+                  id: props.product.id
+                }
+              })
+              }} */}
             
       </CardContent>
       </Card>
