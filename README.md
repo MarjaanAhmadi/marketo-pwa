@@ -58,6 +58,8 @@ https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2Fw
 
 ## Issues
 
+![sixtanimation2](https://user-images.githubusercontent.com/23704949/119955842-b44f1700-bfb5-11eb-8378-0b2a738ed46c.gif)
+
 Feel free to submit issues and enhancement requests.
 
 ### License
