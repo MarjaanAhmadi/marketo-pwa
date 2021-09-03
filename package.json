@@ -11,7 +11,7 @@
     "@material-ui/lab": "^4.0.0-alpha.50",
     "@material-ui/styles": "^4.9.10",
     "@urbica/react-map-gl": "^1.13.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "helmet": "^3.15.0",
     "intersection-observer": "^0.5.1",
     "jalali-moment": "^3.3.3",
